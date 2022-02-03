@@ -1,6 +1,7 @@
-module.exports = function concatArray() {
-  // TODO Implement me.
-};
+module.exports = concatArray;
+
+function concatArray(arr) {}
+concatArray(['Hello', 'this', 'is', 'dog']);
 
 /* Weryfikacja */
 
@@ -12,6 +13,9 @@ function verify(input, goal) {
   }
 }
 
-verify(concatArray(["Hello", "this", "is", "dog"]), 'Hello this is dog.');
-verify(concatArray(["All", "I", "want", "for", "christmas", "is", "you"]), 'All I want for christmas is you.');
+verify(concatArray(['Hello', 'this', 'is', 'dog']), 'Hello this is dog.');
+verify(
+  concatArray(['All', 'I', 'want', 'for', 'christmas', 'is', 'you']),
+  'All I want for christmas is you.'
+);
 verify(concatArray([]), '.');
