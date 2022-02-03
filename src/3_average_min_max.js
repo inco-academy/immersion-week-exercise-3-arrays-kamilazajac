@@ -1,6 +1,21 @@
-module.exports = function averageMinMax() {
-  // TODO Implement me.
-};
+module.exports = averageMinMax;
+
+function averageMinMax(arr) {
+  let max = arr[0];
+  let min = arr[0];
+  let sum = 0;
+  arr.forEach(function (value) {
+    if (value < min) min = value;
+    if (value > max) max = value;
+    sum += value;
+  });
+  let avg = sum / arr.length;
+  return `Min: ${min} Max: ${max} Average: ${avg}`;
+}
+
+averageMinMax([-42, 0, 42]);
+averageMinMax([30, 20, 100]);
+averageMinMax([-23, -4, -12]);
 
 /**Weryfikacja */
 function verify(input, goal) {
