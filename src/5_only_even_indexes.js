@@ -1,7 +1,5 @@
-function evenIndexes() {
-  // TODO Implement me.
-}
-modules.exports = evenIndexes;
+module.exports = evenIndexes;
+
 /**Weryfikacja */
 
 function verify(input, goal) {
